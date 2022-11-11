@@ -67,14 +67,14 @@ getFactoryUnits :: MonadSelda m => m [Unit]
 getFactoryUnits = do
   query $ do
     unit <- select unitTable
-    restrict (is #builtFrom Barracks unit)
+    restrict (is #builtFrom Factory unit)
     return unit
 
 getStarportUnits :: MonadSelda m => m [Unit]
 getStarportUnits = do
   query $ do
     unit <- select unitTable
-    restrict (is #builtFrom Barracks unit)
+    restrict (is #builtFrom Starport unit)
     return unit
 
 getBiologicalUnits :: MonadSelda m => m [Unit]
