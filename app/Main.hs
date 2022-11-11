@@ -13,9 +13,6 @@ import Web.Scotty (scotty)
    - Future features -> Add Building data? --> Provide richer type information?  ❌
 -}
 
--- main :: IO ()
--- main = do
-
 main :: IO ()
 main = do
   -- addUnitsToDb
@@ -31,6 +28,3 @@ main = do
     getMechanicalUnitsR
     getPsionicUnitsR
     getSummonedUnitsR
-
-{-
- -}
